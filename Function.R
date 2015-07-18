@@ -28,4 +28,20 @@ columnmean <- function(y){
   means
 }
 
-na.rm=TRUE
+## Function arg can be missing or might have default value
+## If you named the argument(s) of function, then you don't need to supply the args in order
+mydata <- rnorm(100)
+mydata
+sd(x = mydata)
+sd(x = mydata, na.rm = FALSE)
+sd(na.rm = FALSE, x = mydata)
+sd(na.rm = FALSE, mydata)
+
+x <- 5
+y <- if(x < 3) {
+  NA
+} else {
+  10
+}
+y
+
